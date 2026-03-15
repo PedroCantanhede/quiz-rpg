@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Em um automóvel, a função do hodômetro é indicar:",
+    "options": [
+      "Média de velocidade",
+      "Temperatura do motor",
+      "Distância percorrida",
+      "Consumo de combustível"
+    ],
+    "correctIndex": 2,
+    "hint": "Esse dispositivo mede quanto o carro já andou."
+  },
+  {
+    "question": "Qual planeta do sistema solar é conhecido como 'Planeta Vermelho'?",
+    "options": [
+      "Júpiter",
+      "Marte",
+      "Saturno",
+      "Vênus"
+    ],
+    "correctIndex": 1,
+    "hint": "Seu nome é uma referência ao deus romano da guerra."
+  },
+  {
+    "question": "Quem pintou a Mona Lisa?",
+    "options": [
+      "Michelangelo",
+      "Raphael",
+      "Leonardo da Vinci",
+      "Donatello"
+    ],
+    "correctIndex": 2,
+    "hint": "Esse artista também era inventor e cientista renascentista."
+  },
+  {
+    "question": "Qual é o maior oceano do mundo?",
+    "options": [
+      "Oceano Atlântico",
+      "Oceano Índico",
+      "Oceano Ártico",
+      "Oceano Pacífico"
+    ],
+    "correctIndex": 3,
+    "hint": "Seu nome vem da palavra latina para 'pacífico' ou 'calmo'."
+  },
+  {
+    "question": "Em que ano o Brasil foi descoberto pelos portugueses?",
+    "options": [
+      "1498",
+      "1500",
+      "1502",
+      "1494"
+    ],
+    "correctIndex": 1,
+    "hint": "Pedro Álvares Cabral chegou ao litoral baiano neste ano."
+  },
+  {
+    "question": "Qual é o elemento químico representado pelo símbolo 'O'?",
+    "options": [
+      "Ouro",
+      "Ósmio",
+      "Oxigênio",
+      "Ônio"
+    ],
+    "correctIndex": 2,
+    "hint": "É essencial para a respiração dos seres vivos."
+  },
+  {
+    "question": "Quantos lados tem um hexágono?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1,
+    "hint": "O prefixo 'hexa' vem do grego e significa este número."
+  },
+  {
+    "question": "Qual instrumento musical possui 88 teclas?",
+    "options": [
+      "Órgão",
+      "Acordeão",
+      "Piano",
+      "Cravo"
+    ],
+    "correctIndex": 2,
+    "hint": "É um instrumento de teclas muito popular em concertos clássicos."
+  },
+  {
+    "question": "Qual é a capital da Austrália?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ],
+    "correctIndex": 2,
+    "hint": "Não é a cidade mais populosa, mas sim a sede do governo."
+  },
+  {
+    "question": "Quem escreveu 'Dom Casmurro'?",
+    "options": [
+      "José de Alencar",
+      "Machado de Assis",
+      "Monteiro Lobato",
+      "Clarice Lispector"
+    ],
+    "correctIndex": 1,
+    "hint": "É considerado o maior escritor da literatura brasileira."
+  },
+  {
+    "question": "Qual é o maior animal terrestre do mundo?",
+    "options": [
+      "Rinoceronte",
+      "Hipopótamo",
+      "Elefante-africano",
+      "Girafa"
+    ],
+    "correctIndex": 2,
+    "hint": "Este animal é famoso por sua tromba e grandes orelhas."
+  },
+  {
+    "question": "Qual gás é mais abundante na atmosfera terrestre?",
+    "options": [
+      "Oxigênio",
+      "Dióxido de carbono",
+      "Nitrogênio",
+      "Argônio"
+    ],
+    "correctIndex": 2,
+    "hint": "Ele compõe aproximadamente 78% da atmosfera."
+  },
+  {
+    "question": "Em que continente fica o Egito?",
+    "options": [
+      "Ásia",
+      "Europa",
+      "África",
+      "Oceania"
+    ],
+    "correctIndex": 2,
+    "hint": "É o mesmo continente onde fica o Sahara."
+  },
+  {
+    "question": "Qual é a fórmula química da água?",
+    "options": [
+      "CO2",
+      "H2O",
+      "NaCl",
+      "O2"
+    ],
+    "correctIndex": 1,
+    "hint": "Dois átomos de hidrogênio e um de oxigênio."
+  },
+  {
+    "question": "Quantos estados tem o Brasil?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "correctIndex": 2,
+    "hint": "É necessário lembrar de contar todos, incluindo o Distrito Federal como unidade federativa."
+  },
+  {
+    "question": "Qual era o nome do navio que afundou ao colidir com um iceberg em 1912?",
+    "options": [
+      "Lusitânia",
+      "Britannic",
+      "Titanic",
+      "Olympic"
+    ],
+    "correctIndex": 2,
+    "hint": "Era considerado 'inafundável' antes de sua viagem inaugural."
+  },
+  {
+    "question": "Qual vitamina é produzida quando nos expomos ao sol?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "correctIndex": 3,
+    "hint": "Essa vitamina é importante para a saúde dos ossos."
+  },
+  {
+    "question": "Qual é o rio mais longo do mundo?",
+    "options": [
+      "Rio Amazonas",
+      "Rio Nilo",
+      "Rio Mississipi",
+      "Rio Yangtzé"
+    ],
+    "correctIndex": 1,
+    "hint": "Ele atravessa o nordeste da África."
+  },
+  {
+    "question": "Quem foi o primeiro homem a pisar na Lua?",
+    "options": [
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Neil Armstrong",
+      "Michael Collins"
+    ],
+    "correctIndex": 2,
+    "hint": "Isso aconteceu na missão Apollo 11, em 1969."
+  },
+  {
+    "question": "Qual é a moeda oficial do Japão?",
+    "options": [
+      "Yuan",
+      "Won",
+      "Iene",
+      "Ringgit"
+    ],
+    "correctIndex": 2,
+    "hint": "O símbolo desta moeda é ¥."
+  }
+]

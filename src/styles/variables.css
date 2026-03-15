@@ -1,0 +1,53 @@
+:root {
+  /* ── Color Palette (1930s Cartoon) ── */
+  --color-black: #0a0a0a;
+  --color-dark: #1a1a1a;
+  --color-dark-grey: #2a2a2a;
+  --color-mid-grey: #4a4a4a;
+  --color-light-grey: #8a8a8a;
+  --color-off-white: #e8dcc8;
+  --color-cream: #f5ecd7;
+  --color-white: #faf3e3;
+  --color-sepia: #c4a96a;
+  --color-sepia-dark: #9a7b3c;
+  --color-accent: #d4a843;
+  --color-accent-glow: #f0cc6b;
+  --color-danger: #b34040;
+  --color-success: #5a9a5a;
+
+  /* ── Typography ── */
+  --font-title: 'Creepster', cursive;
+  --font-body: 'Special Elite', cursive;
+  --font-ui: 'Courier Prime', monospace;
+
+  /* ── Borders (hand-drawn style) ── */
+  --border-thin: 2px solid var(--color-cream);
+  --border-thick: 4px solid var(--color-cream);
+  --border-decorative: 3px solid var(--color-sepia);
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  /* ── Shadows (vintage film look) ── */
+  --shadow-card: 4px 4px 0px var(--color-dark-grey);
+  --shadow-card-hover: 6px 6px 0px var(--color-mid-grey);
+  --shadow-glow: 0 0 15px rgba(212, 168, 67, 0.3);
+  --shadow-inset: inset 0 2px 8px rgba(0, 0, 0, 0.4);
+
+  /* ── Spacing ── */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  /* ── Film Grain Overlay ── */
+  --grain-opacity: 0.04;
+}

@@ -1,0 +1,55 @@
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-dark);
+  border: var(--border-thin);
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-cream);
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+  text-align: left;
+  box-shadow: var(--shadow-card);
+}
+
+.option:hover {
+  background: var(--color-dark-grey);
+  border-color: var(--color-sepia);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateX(4px);
+}
+
+.option:active {
+  transform: translateX(2px) scale(0.98);
+}
+
+.optionLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--color-sepia);
+  border-radius: 50%;
+  font-family: var(--font-title);
+  font-size: 1rem;
+  color: var(--color-sepia);
+  flex-shrink: 0;
+}
+
+.optionText {
+  flex: 1;
+}
+
+.option.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

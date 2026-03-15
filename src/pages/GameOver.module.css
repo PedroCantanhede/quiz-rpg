@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-2xl);
+  text-align: center;
+  gap: var(--space-xl);
+}
+
+.skull {
+  font-size: 5rem;
+  animation: wobble 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(179, 64, 64, 0.3));
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  color: var(--color-danger);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-shadow: 3px 3px 0px var(--color-dark-grey);
+}
+
+.message {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-light-grey);
+  max-width: 400px;
+  line-height: 1.8;
+}
+
+.score {
+  font-family: var(--font-ui);
+  font-size: 1.2rem;
+  color: var(--color-sepia);
+  letter-spacing: 2px;
+}
+
+.retryButton {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  color: var(--color-cream);
+  background: var(--color-dark-grey);
+  padding: var(--space-md) var(--space-2xl);
+  border: var(--border-decorative);
+  border-radius: var(--border-radius-md);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.retryButton:hover {
+  background: var(--color-mid-grey);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.retryButton:active {
+  transform: translateY(0) scale(0.98);
+}
