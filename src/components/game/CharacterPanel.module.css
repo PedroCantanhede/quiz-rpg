@@ -18,21 +18,7 @@
   object-fit: contain;
   animation: wobble 3s ease-in-out infinite;
   filter: sepia(0.2) contrast(1.1);
-}
-
-.placeholder {
-  width: 200px;
-  height: 200px;
-  border: 2px dashed var(--color-mid-grey);
-  border-radius: var(--border-radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-mid-grey);
-  font-family: var(--font-ui);
-  font-size: 0.8rem;
-  text-align: center;
-  animation: wobble 3s ease-in-out infinite;
+  transition: opacity var(--transition-normal);
 }
 
 .characterName {
@@ -41,3 +27,4 @@
   color: var(--color-sepia);
   letter-spacing: 2px;
 }
+

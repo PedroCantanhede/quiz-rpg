@@ -7,8 +7,9 @@
   background: var(--color-dark);
   border: var(--border-thin);
   border-radius: var(--border-radius-md);
-  font-family: var(--font-body);
-  font-size: 1rem;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
   color: var(--color-cream);
   cursor: pointer;
   transition:
@@ -20,14 +21,14 @@
   box-shadow: var(--shadow-card);
 }
 
-.option:hover {
+.option:hover:not(.disabled):not(.correct):not(.wrong) {
   background: var(--color-dark-grey);
   border-color: var(--color-sepia);
   box-shadow: var(--shadow-card-hover);
   transform: translateX(4px);
 }
 
-.option:active {
+.option:active:not(.disabled):not(.correct):not(.wrong) {
   transform: translateX(2px) scale(0.98);
 }
 
@@ -43,13 +44,67 @@
   font-size: 1rem;
   color: var(--color-sepia);
   flex-shrink: 0;
+  transition: 
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    background var(--transition-fast);
 }
 
 .optionText {
   flex: 1;
 }
 
+/* ── Correct answer ── */
+.option.correct {
+  background: rgba(90, 154, 90, 0.15);
+  border-color: var(--color-success);
+  animation: pulse 300ms ease-in-out;
+  cursor: default;
+}
+
+.option.correct .optionLabel {
+  border-color: var(--color-success);
+  color: var(--color-success);
+  background: rgba(90, 154, 90, 0.2);
+}
+
+/* ── Wrong answer ── */
+.option.wrong {
+  background: rgba(179, 64, 64, 0.15);
+  border-color: var(--color-danger);
+  animation: shake 300ms ease-in-out;
+  cursor: default;
+}
+
+.option.wrong .optionLabel {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+  background: rgba(179, 64, 64, 0.2);
+}
+
+/* ── Suggested answer ── */
+.option.suggested {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 12px rgba(212, 168, 67, 0.3);
+}
+
+.option.suggested .optionLabel {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ── Disabled (removed by help) ── */
 .option.disabled {
-  opacity: 0.4;
+  opacity: 0.25;
   pointer-events: none;
+  filter: grayscale(0.5);
+}
+
+/* ── Shake animation for wrong answers ── */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
 }

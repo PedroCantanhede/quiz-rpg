@@ -15,6 +15,11 @@ interface QuizBoardProps {
   };
   onAnswer?: (index: number) => void;
   onUseHelp?: (helpType: 'removeTwo' | 'hint' | 'suggestion') => void;
+  selectedAnswer: number | null;
+  answerResult: 'correct' | 'wrong' | null;
+  removedOptions: number[];
+  hintText: string | null;
+  suggestedIndex: number | null;
 }
 
 export function QuizBoard({
@@ -24,6 +29,11 @@ export function QuizBoard({
   usedHelps,
   onAnswer,
   onUseHelp,
+  selectedAnswer,
+  answerResult,
+  removedOptions,
+  hintText,
+  suggestedIndex,
 }: QuizBoardProps) {
   return (
     <div className={styles.board}>
@@ -34,15 +44,38 @@ export function QuizBoard({
       />
 
       <div className={styles.answers}>
-        {question.options.map((option, index) => (
-          <AnswerOption
-            key={index}
-            label={LABELS[index]}
-            text={option}
-            onClick={() => onAnswer?.(index)}
-          />
-        ))}
+        {question.options.map((option, index) => {
+          const isRemoved = removedOptions.includes(index);
+          const isSelected = selectedAnswer === index;
+          const isSuggested = suggestedIndex === index;
+
+          let state: 'default' | 'correct' | 'wrong' | 'disabled' | 'suggested' = 'default';
+          if (isRemoved) state = 'disabled';
+          if (isSuggested && answerResult === null) state = 'suggested';
+          if (isSelected && answerResult === 'correct') state = 'correct';
+          if (isSelected && answerResult === 'wrong') state = 'wrong';
+          // Also highlight correct answer when player got it wrong
+          if (answerResult === 'wrong' && index === question.correctIndex) state = 'correct';
+
+          return (
+            <AnswerOption
+              key={index}
+              label={LABELS[index]}
+              text={option}
+              disabled={isRemoved || answerResult !== null}
+              state={state}
+              onClick={() => onAnswer?.(index)}
+            />
+          );
+        })}
       </div>
+
+      {hintText && (
+        <div className={styles.hintBanner}>
+          <span className={styles.hintIcon}>💡</span>
+          <span className={styles.hintTextContent}>{hintText}</span>
+        </div>
+      )}
 
       <HelpSystem usedHelps={usedHelps} onUseHelp={onUseHelp} />
     </div>

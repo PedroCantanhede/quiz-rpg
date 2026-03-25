@@ -4,7 +4,7 @@
   --color-dark: #1a1a1a;
   --color-dark-grey: #2a2a2a;
   --color-mid-grey: #4a4a4a;
-  --color-light-grey: #8a8a8a;
+  --color-light-grey: #B8B8B8;
   --color-off-white: #e8dcc8;
   --color-cream: #f5ecd7;
   --color-white: #faf3e3;
@@ -16,8 +16,13 @@
   --color-success: #5a9a5a;
 
   /* ── Typography ── */
-  --font-title: 'Creepster', cursive;
+  /* Rye: ornate vintage saloon feel, close to CupHead's title cards */
+  --font-title: 'Rye', serif;
+  /* Bangers: bold comic display for questions & answers */
+  --font-display: 'Bangers', cursive;
+  /* Special Elite: typewriter vintage for body text */
   --font-body: 'Special Elite', cursive;
+  /* Courier Prime: clean mechanical for UI labels */
   --font-ui: 'Courier Prime', monospace;
 
   /* ── Borders (hand-drawn style) ── */

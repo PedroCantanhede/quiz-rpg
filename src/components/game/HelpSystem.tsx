@@ -16,19 +16,19 @@ export function HelpSystem({ usedHelps, onUseHelp }: HelpSystemProps) {
       <p className={styles.title}>Cartas de Ajuda</p>
       <div className={styles.container}>
         <HelpCard
-          icon="✂️"
+          iconType="eliminate"
           label="Eliminar 2"
           used={usedHelps.removeTwo}
           onClick={() => onUseHelp?.('removeTwo')}
         />
         <HelpCard
-          icon="💡"
+          iconType="hint"
           label="Dica"
           used={usedHelps.hint}
           onClick={() => onUseHelp?.('hint')}
         />
         <HelpCard
-          icon="🎯"
+          iconType="suggestion"
           label="Sugestão"
           used={usedHelps.suggestion}
           onClick={() => onUseHelp?.('suggestion')}

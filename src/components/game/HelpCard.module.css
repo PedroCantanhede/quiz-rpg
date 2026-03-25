@@ -29,7 +29,22 @@
 }
 
 .icon {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.iconSvg {
+  width: 28px;
+  height: 28px;
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+.card:hover:not(.used) .iconSvg {
+  color: var(--color-accent-glow);
 }
 
 .label {

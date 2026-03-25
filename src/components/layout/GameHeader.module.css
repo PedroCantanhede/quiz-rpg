@@ -27,22 +27,43 @@
   font-style: italic;
 }
 
+/* ── Score Display ── */
+.scoreDisplay {
+  position: absolute;
+  top: 50%;
+  right: var(--space-xl);
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.scoreLabel {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.scoreValue {
+  font-family: var(--font-ui);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px rgba(212, 168, 67, 0.3);
+}
+
 /* Decorative corner ornaments */
-.header::before,
-.header::after {
+.header::before {
   content: '✦';
   position: absolute;
   top: 50%;
+  left: var(--space-lg);
   transform: translateY(-50%);
   font-size: 1.2rem;
   color: var(--color-sepia);
   opacity: 0.6;
-}
-
-.header::before {
-  left: var(--space-lg);
-}
-
-.header::after {
-  right: var(--space-lg);
 }

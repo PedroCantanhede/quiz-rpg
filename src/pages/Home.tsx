@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useGame } from '../context/GameContext';
+import { characterAssets } from '../config/characterAssets';
 import styles from './Home.module.css';
 
 export function Home() {
@@ -20,6 +21,12 @@ export function Home() {
 
       <div className={styles.divider} />
 
+      <img
+        className={styles.character}
+        src={characterAssets.start}
+        alt="Mestre do Quiz"
+      />
+
       <p className={styles.description}>
         Responda 15 perguntas e tente sobreviver até o final.
         Use suas cartas de ajuda com sabedoria... ou perca tudo.
@@ -33,3 +40,4 @@ export function Home() {
     </div>
   );
 }
+
