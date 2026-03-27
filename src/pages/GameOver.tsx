@@ -22,14 +22,12 @@ export function GameOver() {
   const isVictory = gameState.score >= totalQuestions;
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${isVictory ? styles.victory : styles.defeat}`}>
       <img
         className={styles.characterImage}
-        src={characterAssets.gameOver}
-        alt="Game Over Character"
+        src={isVictory ? characterAssets.start : characterAssets.gameOver}
+        alt={isVictory ? 'Victory Character' : 'Game Over Character'}
       />
-
-      <span className={styles.skull}>💀</span>
 
       <h1 className={styles.title}>
         {isVictory ? 'Vitória!' : 'Game Over'}

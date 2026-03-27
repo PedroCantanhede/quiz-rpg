@@ -14,23 +14,31 @@
   width: 200px;
   height: 200px;
   object-fit: contain;
-  filter: sepia(0.2) contrast(1.1) drop-shadow(0 0 30px rgba(179, 64, 64, 0.25));
   animation: wobble 3s ease-in-out infinite;
 }
 
-.skull {
-  font-size: 5rem;
-  animation: wobble 2s ease-in-out infinite;
-  filter: drop-shadow(0 0 20px rgba(179, 64, 64, 0.3));
+.defeat .characterImage {
+  filter: sepia(0.2) contrast(1.1) drop-shadow(0 0 30px rgba(179, 64, 64, 0.25));
+}
+
+.victory .characterImage {
+  filter: sepia(0.1) contrast(1.1) drop-shadow(0 0 30px rgba(64, 179, 80, 0.35));
 }
 
 .title {
   font-family: var(--font-title);
   font-size: 3rem;
-  color: var(--color-danger);
   text-transform: uppercase;
   letter-spacing: 6px;
   text-shadow: 3px 3px 0px var(--color-dark-grey);
+}
+
+.defeat .title {
+  color: var(--color-danger);
+}
+
+.victory .title {
+  color: #4caf50;
 }
 
 .message {
