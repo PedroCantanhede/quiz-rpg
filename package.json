@@ -2,6 +2,7 @@
   "name": "quiz-rpg",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://pedrocantanhede.github.io/quiz-rpg",
   "type": "module",
   "scripts": {
     "dev": "vite",
